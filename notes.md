@@ -60,3 +60,30 @@ recovery and availability goals.
    - **Importance**: A shorter MTTR indicates that the system is efficiently restored after an incident, minimizing downtime and improving overall system
       resilience. Streamlined recovery procedures and automation play a key role in reducing MTTR.
 
+![Three Ms](./images/three-ms.png)
+
+To build a resilient system, it’s essential to establish **recovery objectives** and **BRT** goals that align
+with both **technical feasibility** and **business needs**. Metrics like **MTBF**, **MTTD**,
+and **MTTR** play a key role in shaping these goals.
+
+1. **MTBF and MTTD** help inform **recovery objectives**:
+   - **MTBF** provides insights into the average time between failures, indicating the reliability of your system. A better understanding of MTBF helps you              estimate how often failures might occur, allowing you to set recovery objectives that align with typical downtime intervals.
+   - **MTTD** tells you how long it typically takes to detect an issue. By understanding detection times, you can establish realistic recovery objectives based on       how long it generally takes to identify and respond to failures.
+
+2. **MTTR influences BRT**:
+   - **MTTR** measures the average time to repair or recover from a failure. Knowing your historical MTTR helps set achievable **BRT goals**, as faster recovery         times (lower MTTR) allow for more aggressive BRT targets, ensuring the system can restore functionality quickly and minimize business impact.
+
+### Steps to Set Resilience Goals:
+1. **Establish Baselines**:
+   - Analyze your historical data to determine your baseline MTBF, MTTD, and MTTR values. These metrics give you a realistic view of past performance and help           identify areas for improvement.
+
+2. **Set Improvement Goals**:
+   - Based on your baselines, aim to reduce failures (improve MTBF) and improve recovery times (reduce MTTR). Focus on improving detection times (MTTD) for quicker      response and mitigation.
+
+3. **Align with Business Needs**:
+   - Consider the financial impact, customer experience, and other business factors that downtime may affect. Systems in critical areas (e.g., financial                 transactions, healthcare) may need stricter recovery objectives and BRTs than noncritical systems.
+
+4. **Monitor and Adjust**:
+   - Continuously track MTBF, MTTD, and MTTR to assess the effectiveness of your resilience strategies. Use this data to refine your recovery objectives and BRT         goals, ensuring they remain aligned with business requirements.
+
+
