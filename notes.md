@@ -132,7 +132,9 @@ In AWS, disaster recovery differs from traditional on-premise approaches. The AW
 
 ## Disaster Recovery Strategies
 
-Disaster Recovery Strategies help ensure business continuity by addressing how to recover systems and data in the event of a disaster. There are several strategies, each suited to different business needs, resource constraints, and recovery objectives:
+Disaster Recovery Strategies help ensure business continuity by addressing how to recover systems and data in the event of a disaster. There are several strategies, each suited to different business needs, resource constraints, and recovery objectives.
+
+![Desaster Recovery Strategies](./images/disaster-recovery-strategies.png)
 
 1. **Backup and Restore**:
    - Involves regularly backing up critical data and system configurations to a secure location.
@@ -155,6 +157,19 @@ Disaster Recovery Strategies help ensure business continuity by addressing how t
    - Best for mission-critical applications where even brief downtime could have significant consequences.
    - Expensive, as it requires a fully operational replica of the production environment.
 
+## Service Quotas
 
+Service Quotas are predefined limits on the usage of resources or operations within an account or region. Effective management of these quotas is essential for maintaining stability, reliability, and cost-effectiveness of cloud services. Exceeding service quotas can result in resource exhaustion, service degradation, or outages, so staying within these limits is key to ensuring application availability and performance.
 
+### Key Strategies for Managing Service Quotas:
 
+1. **Understand Service Quotas**:
+   - AWS sets different quotas for each service, dictating the maximum number of resources or operations allowed. Familiarizing yourself with these quotas helps make informed decisions about resource usage.
+
+2. **Monitor and Manage Quotas**:
+   - Use tools like **AWS CloudTrail** and **Amazon CloudWatch** to monitor resource usage. Set up **alarms** to notify you when usage approaches predefined thresholds.
+   - Integrate quota increase requests into your workflow using the **AWS Service Quotas API** to automate the process of requesting additional resources when          limits are reached.
+
+3. **Optimize Resource Allocation**:
+   - Prioritize critical workloads and applications to ensure resources are allocated effectively. Use **AWS resource tagging** to categorize and track resource usage based on business priorities.
+   - Regularly review and optimize resource usage by analyzing patterns, identifying inefficiencies, and implementing measures to improve utilization. This helps reduce costs and ensures resources are being used efficiently.
